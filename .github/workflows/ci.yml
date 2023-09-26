@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    uses: esphome_hydrophonictower/.github/workflows/publish.yml@main
+    uses: rpareixx/esphome_hydrophonictower/.github/workflows/publish.yml@main
     with:
       files: mfivestickhydrophonictower.yaml
       name: esphome-hydrophonictower
