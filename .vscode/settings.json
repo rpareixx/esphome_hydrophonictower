@@ -1,5 +1,4 @@
 {
-    "files.associations": {
-        "*.yaml": "home-assistant"
-    }
+    "esphome.dashboardUri": "http://localhost:6052",
+    "esphome.validator": "local"
 }
