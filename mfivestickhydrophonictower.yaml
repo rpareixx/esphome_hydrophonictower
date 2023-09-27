@@ -24,6 +24,7 @@ external_components:
       url: https://github.com/chill-Division/M5Stack-ESPHome/
       ref: main
     components: m5stack_pbhub
+
   - source:
       type: git
       url: https://gitlab.com/geiseri/esphome_extras.git
@@ -31,6 +32,8 @@ external_components:
       #ref: "lando/add-charging-indicator"
     refresh: 0s
     components: [axp192]
+
+  - source: github://oarcher/piotech/
 
 #external_components:
 #  - source:
@@ -73,6 +76,10 @@ api:
 
 ota:
     password: !secret ota_password
+
+    
+    
+ota_http:
   
 wifi:
     ssid: !secret wifi_ssid
@@ -232,7 +239,7 @@ binary_sensor:
   - platform: status
     id: api_connected
     internal: true
-  # Button A implementation....
+  # Button A implementation
   - platform: gpio
     name: Button
     pin:
@@ -269,7 +276,15 @@ switch:
   - platform: restart
     id: restart_switch
     name: "${friendly_name} Restart"
-        
+
+button:
+  - platform: template
+    name: "Firmware update"
+    on_press:
+      then:
+        - ota_http.flash:
+            url: http://rpareixx.github.io/esphome_hydrophonictower/m5stickhydrophonictower-esp32/m5stickhydrophonictower-esp32.bin
+        - logger.log: "This message should be not displayed(reboot)"
 
 font:
   - file: "fonts/OpenSans-Regular.ttf"
