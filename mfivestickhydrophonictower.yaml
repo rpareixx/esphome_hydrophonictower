@@ -232,7 +232,7 @@ binary_sensor:
   - platform: status
     id: api_connected
     internal: true
-  # Button A implementation.
+  # Button A implementation....
   - platform: gpio
     name: Button
     pin:
