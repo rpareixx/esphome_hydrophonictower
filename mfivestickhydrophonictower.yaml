@@ -74,11 +74,9 @@ api:
     encryption:
       key: !secret api_password
 
-ota:
-    password: !secret ota_password
+#ota:
+#    password: !secret ota_password
 
-    
-    
 ota_http:
   
 wifi:
