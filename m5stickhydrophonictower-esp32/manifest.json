@@ -1,0 +1,9 @@
+{
+  "chipFamily": "ESP32",
+  "parts": [
+    {
+      "path": "m5stickhydrophonictower-esp32/m5stickhydrophonictower-esp32.bin",
+      "offset": 0
+    }
+  ]
+}
