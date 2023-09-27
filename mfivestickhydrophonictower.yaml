@@ -140,8 +140,8 @@ spi:
 m5stack_pbhub:
   - id: 'M5Stack_HUB'
     address: 0x61 # Base I2C Address
-    sda: 16 # I2C SDA Pin (Yellow grove cable)
-    scl: 17 # I2C SCL Pin (White grove cable)
+    sda: 32 # I2C SDA Pin (Yellow grove cable)
+    scl: 31 # I2C SCL Pin (White grove cable)
 
 esp32_touch:
   #setup_mode: true
