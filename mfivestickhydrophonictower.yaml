@@ -276,14 +276,14 @@ switch:
     id: restart_switch
     name: "${friendly_name} Restart"
 
-button:
-  - platform: template
-    name: "Firmware update"
-    on_press:
-      then:
-        - ota_http.flash:
-            url: http://rpareixx.github.io/esphome_hydrophonictower/m5stickhydrophonictower-esp32/m5stickhydrophonictower-esp32.bin
-        - logger.log: "This message should be not displayed(reboot)"
+#button:
+#  - platform: template
+#    name: "Firmware update"
+#    on_press:
+#      then:
+#        - ota_http.flash:
+#            url: http://rpareixx.github.io/esphome_hydrophonictower/m5stickhydrophonictower-esp32/m5stickhydrophonictower-esp32.bin
+#        - logger.log: "This message should be not displayed(reboot)"
 
 font:
   - file: "fonts/OpenSans-Regular.ttf"
