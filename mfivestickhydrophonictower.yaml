@@ -33,7 +33,7 @@ external_components:
     refresh: 0s
     components: [axp192]
 
-  - source: github://oarcher/piotech/
+#  - source: github://oarcher/piotech/
 
 
       #external_components:
@@ -78,7 +78,7 @@ api:
 ota:
     password: !secret ota_password
 
-ota_http:
+#ota_http:
   
 wifi:
     ssid: !secret wifi_ssid
@@ -143,9 +143,9 @@ m5stack_pbhub:
     sda: 32 # I2C SDA Pin (Yellow grove cable)
     scl: 31 # I2C SCL Pin (White grove cable)
 
-esp32_touch:
-  #setup_mode: true
-  iir_filter: 10ms
+#esp32_touch:
+#  #setup_mode: true
+#  iir_filter: 10ms
 
 axp192: # setup backlight and charging
  id: axp

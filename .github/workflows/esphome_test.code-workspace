@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../../esphome_test"
+		},
+		{
+			"path": "../../../esphome_gitlab_hydrophonictower"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"esphome.dashboardUri": "http://localhost:6052",
+		"esphome.validator": "local"
+	}
+}
