@@ -145,8 +145,8 @@ m5stack_pbhub:
   - id: 'M5Stack_HUB'
     address: 0x61 # Base I2C Address
     #i2c_id: bus_b
-    sda: 32 # I2C SDA Pin (Yellow grove cable)
-    scl: 33 # I2C SCL Pin (White grove cable)
+    sda: GPIO32 # I2C SDA Pin (Yellow grove cable)
+    scl: GPIO33 # I2C SCL Pin (White grove cable)
 
 #esp32_touch:
 #  #setup_mode: true
@@ -305,7 +305,7 @@ switch:
 #        - logger.log: "This message should be not displayed(reboot)"
 
 font:
-  - file: "fonts/OpenSans-Regular.ttf"
+  - file: "fonts/arial.ttf"
     id: font1
     size: 66
 
