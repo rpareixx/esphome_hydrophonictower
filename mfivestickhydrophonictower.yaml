@@ -266,7 +266,7 @@ binary_sensor:
       mode:
         output: true
       inverted: false
-      filters:
+    filters:
       - delayed_off: 10ms
     on_press:
       then:
