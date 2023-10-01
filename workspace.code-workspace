@@ -1,0 +1,10 @@
+{
+	"folders": [],
+	"settings": {
+		"files.associations": {
+			"*.yaml": "home-assistant"
+		},
+		"esphome.dashboardUri": "",
+		"esphome.validator": "local"
+	}
+}
