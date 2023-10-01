@@ -256,29 +256,29 @@ binary_sensor:
     on_press:
       then:
         - logger.log: Center Button Pressed
-#  - platform: gpio
-#    name: "Dual Button on PBHUB Channel #2 Pin #0"
-#    pin:
-#      m5stack_pbhub: M5Stack_HUB
-#      # Use channel 2, pin number 0
-#      number: 20
-#      mode:
-#        output: true
-#      inverted: false
+  - platform: gpio
+    name: "Dual Button on PBHUB Channel #2 Pin #0"
+    pin:
+      m5stack_pbhub: M5Stack_HUB
+      # Use channel 2, pin number 0
+      number: 20
+      mode:
+        output: true
+      inverted: false
 #    filters:
 #      - delayed_off: 10ms
 #    on_press:
 #      then:
 #        - logger.log: Red Button Pressed
-#  - platform: gpio
-#    name: "Dual Button on PBHUB Channel #2 Pin #1"
-#    pin:
-#      m5stack_pbhub: M5Stack_HUB
-#      #Use channel 2, pin number 1
-#      number: 21
-#      mode:
-#        output: true
-#      inverted: false
+  - platform: gpio
+    name: "Dual Button on PBHUB Channel #2 Pin #1"
+    pin:
+      m5stack_pbhub: M5Stack_HUB
+      #Use channel 2, pin number 1
+      number: 21
+      mode:
+        output: true
+      inverted: false
 #    filters:
 #      - delayed_off: 10ms
 #    on_press:
