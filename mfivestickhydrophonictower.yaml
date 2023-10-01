@@ -20,9 +20,8 @@ esphome:
 
 external_components:
   - source:
-      type: git
-      url: https://github.com/chill-Division/M5Stack-ESPHome/
-      ref: main
+      type: local
+      path: custom_components
     components: m5stack_pbhub
 
   - source:
