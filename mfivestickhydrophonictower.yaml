@@ -125,10 +125,10 @@ i2c:
     sda: GPIO21
     scl: GPIO22
     scan: true
-  - id: bus_b #GROVE port
-    sda: GPIO32
-    scl: GPIO33
-    scan: true
+#  - id: bus_b #GROVE port
+#    sda: GPIO32
+#    scl: GPIO33
+#    scan: true
 
 spi:
   clk_pin: GPIO13
